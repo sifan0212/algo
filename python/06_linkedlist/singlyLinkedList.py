@@ -276,7 +276,7 @@ class SinglyLinkedList():
         slow = self.__head
 
         while fast.next != None and fast != None:
-            fast = fast.next
+            fast = fast.next.next
             slow = slow.next
             if fast == slow:
                 return True
